@@ -1,0 +1,1242 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .tracking-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #1a202c;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .icon {
+    color: #e53e3e;
+    margin-right: 0.25rem;
+  }
+  
+  .icon-white {
+    color: white;
+  }
+  
+  .logo-track {
+    color: #e53e3e;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .logo-it {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white ;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-list li {
+    margin-left: 1.5rem;
+    cursor: pointer;
+  }
+  
+
+
+.hero {
+  background: linear-gradient(to right, #0E0E0E, #AE4330, #FF5E41);
+  color: white;
+  overflow: hidden;
+  padding: 4rem 2rem;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem; 
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+  padding-left: 0; 
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  width: 200%;
+  font-size: 3rem;
+  color: white;
+  margin-right: 0;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+  
+  /* Hero Section */
+  /* .hero {
+    background: linear-gradient(to right, #0E0E0E, #AE4330, #FF5E41);
+    color: white;
+      overflow: hidden; 
+      padding: 4rem 0; 
+
+
+  }
+  
+  .hero-container {
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-evenly; 
+   
+
+  }
+  
+  .hero-content {
+    margin-bottom: 1.5rem;
+
+  }
+.hero-content h1 {
+  width: 200%;
+  font-size: 3rem;
+  color: white;
+  margin-right: 5rem;
+
+  }
+  .hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    /* margin-top: 5rem; */
+    /* width: 100%; */
+
+  /* }  */
+  
+  .hero-content p {
+    /* width: 100vh;
+    font-size: 3rem; */
+    color: white;
+    
+  
+    }
+  .hero-subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* .search-box {
+    display: flex;
+    max-width: 30rem;
+  } */
+  .search-input {
+    padding: 1.8rem;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    color: #4a5568;
+    width: 200%;
+
+  }
+  
+  .search-button {
+    background-color: #e53e3e;
+    padding: 1rem;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-button:hover {
+    background-color: #c53030;
+  }
+  
+  .help-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .help-link {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+  border-radius: 0.5rem;
+  margin-left: 0; /* Remove the left margin */
+  margin-right: 0; /* Ensure no right margin */
+
+  }
+  /* .hero-image{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    margin-left: 0; 
+    margin-right: -1rem;
+  } */
+
+  .imgcontain{
+     height: 40vh;
+
+  }
+  .imgcontain img{
+    height: 51vh;
+margin-left: 32rem; 
+object-fit: contain;
+width: 100%;
+}
+
+
+  /* Feature Sections */
+  .feature-section {
+    padding: 4rem 1rem;
+  }
+  
+  .light {
+    background-color: white;
+  }
+  
+  .gray {
+    background-color: #f7fafc;
+  }
+  
+  .feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-content {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 5rem;
+
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e53e3e;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-text {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    max-width: 36rem;
+  }
+  
+  .feature-image img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+  }
+  
+  /* Pricing Section */
+  .pricing-section {
+    padding: 4rem 1rem;
+    background-color: white;
+  }
+  
+  .pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e53e3e;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .pricing-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e53e3e;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .card-text {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-footer {
+    background-color: #e53e3e;
+    height: 0.5rem;
+  }
+  
+  /* Carriers Section */
+  .carriers-section {
+    padding: 4rem 1rem;
+    background-color: #f7fafc;
+  }
+  
+  .carriers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .carrier-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .carrier-card {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carrier-logo {
+    margin: 0 auto 1rem;
+    max-width: 100%;
+  }
+  
+  .carrier-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .carrier-text {
+    font-size: 0.75rem;
+    color: #4a5568;
+    margin-bottom: 1rem;
+  }
+  
+  .carrier-company {
+    font-size: 0.75rem;
+    color: #a0aec0;
+    margin-bottom: 1rem;
+  }
+  
+  .track-button {
+    background-color: black;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    padding: 4rem 1rem;
+    background-color: white;
+  }
+  
+  .faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .faq-content {
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-question {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .faq-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-icon.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .faq-answer {
+    padding: 1rem;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1a202c;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footer-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-text {
+    font-size: 0.875rem;
+    color: #a0aec0;
+  }
+  
+  .footer-links {
+    list-style: none;
+    font-size: 0.875rem;
+    color: #a0aec0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-container {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .hero-content {
+      width: 50%;
+      text-align: left;
+      margin-bottom: 0;
+    }
+    
+    .hero-image {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .hero-title {
+      font-size: 2.25rem;
+    }
+    
+    .feature-container {
+      flex-direction: row;
+    }
+    
+    .feature-container.reverse {
+      flex-direction: row-reverse;
+      gap: 4rem;
+      margin-bottom: 2rem;
+    }
+    
+    .feature-content {
+      width: 50%;
+      text-align: left;
+      margin-bottom: 0;
+    }
+    
+    .feature-image {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .feature-container.reverse .feature-image {
+      justify-content: flex-start;
+    }
+    
+    .pricing-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .carrier-cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .footer-columns {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .second-pricing-card{
+    margin-bottom: 18px;
+  }
+
+  /* Additional CSS for Tracking Results Page */
+
+/* Tracking Hero Section */
+.tracking-hero {
+  padding: 3rem 1rem 4rem;
+}
+
+.tracking-result-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tracking-content {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.tracking-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.tracking-subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.highlight-number {
+  color: #e53e3e;
+}
+
+.tracking-search {
+  margin: 0 auto 2rem;
+  max-width: 650px;
+  width: 100%;
+}
+
+.tracking-result-box {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e53e3e;
+  padding: 1rem;
+}
+
+.error-icon {
+  color: #e53e3e;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e53e3e;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .tracking-title {
+    font-size: 3rem;
+  }
+
+  .tracking-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .tracking-search {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Update existing styles for consistent look */
+.search-input {
+  font-size: 1rem;
+}
+
+.faq-content {
+  margin-top: 2rem;
+}
+
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate__slideInFromRight {
+  animation-name: slideInFromRight;
+  animation-duration: 1s;
+}
+
+/* Custom animation delay classes */
+.animate__delay-200ms {
+  animation-delay: 200ms !important;
+}
+
+.animate__delay-400ms {
+  animation-delay: 400ms !important;
+}
+
+.animate__delay-600ms {
+  animation-delay: 600ms !important;
+}
+
+.animate__delay-800ms {
+  animation-delay: 800ms !important;
+}
+
+/* Zoom effect on hover */
+.zoom-on-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulse animation for icons */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+/* Image hover effects */
+.feature-image img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.feature-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ hover effect */
+.faq-question:hover {
+  background-color: rgba(229, 62, 62, 0.05);
+}
+
+/* Logo hover animation */
+.logo:hover .icon {
+  animation: pulse 1s infinite;
+}
+
+/* Make search button more interactive */
+.search-button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.search-button:hover {
+  transform: scale(1.1);
+  background-color: #c53030;
+}
+
+/* Add a subtle transition to all cards */
+.pricing-card, .carrier-card {
+  transition: all 0.3s ease;
+}
+
+/* Animate FAQ icon rotation more smoothly */
+.faq-icon {
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.faq-icon.rotate {
+  transform: rotate(180deg);
+}
+#btn1{
+  background-color: #e53e3e;
+  padding: 2.1rem;
+  border: none;
+  cursor: pointer;
+
+}
+#btn2{
+  background-color: #e53e3e;
+  padding: 2.1rem;
+  border: none;
+  cursor: pointer;
+
+}
+#span1{
+  color: white;
+  margin-left: 1rem;
+}
+
+/* Add these styles to fix the form layout */
+form {
+  display: flex;
+  width: 100%;
+}
+
+/* Fix the search input and button */
+.search-input {
+  padding: 1.8rem;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  color: #4a5568;
+  width: 100%;
+}
+
+.search-button {
+  background-color: #e53e3e;
+  padding: 1rem;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button specific styling */
+#btn1, #btn2 {
+  background-color: #e53e3e;
+  padding: 1.8rem;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Search box container */
+.search-box {
+  display: flex;
+  width: 100vh;
+  max-width: 30rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white; /* Default text color */
+  background-color: #6c757d; /* Default background for unknown statuses */
+}
+
+Status-specific styles
+.status-ordered {
+  background-color: #5a6268; /* Dark gray */
+}
+
+.status-processing {
+  background-color: #007bff; /* Blue */
+}
+
+.status-ready-to-ship {
+  background-color: #fd7e14; /* Orange */
+}
+
+.status-shipped {
+  background-color: #6f42c1; /* Purple */
+}
+
+.status-out-for-delivery {
+  background-color: #fd7e14; /* Orange */
+}
+
+.status-delivered {
+  background-color: #28a745; /* Green */
+}
+
+.status-cancelled {
+  background-color: #dc3545; /* Red */
+}
+
+.status-unknown {
+  background-color: #6c757d; /* Gray */
+}
+
+.tracking-header {
+  display: flex;
+
+  
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 15px;
+}
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 15px; /* Half of the dot height */
+  bottom: -25px; /* Connect to the next dot */
+  left: -34px; /* Line up with the center of the dots */
+  width: 4px;
+  background-color: #28a745; /* Green for completed sections */
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .hero-container {
+    display: block; /* Stack elements vertically */
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    height: auto; /* Remove fixed height */
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    margin-top: 1rem; /* Reduce top margin */
+    width: 100%; /* Full width */
+  }
+
+  .hero-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .search-box {
+    width: 100%; /* Full width search box */
+    max-width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    display: block; /* Change from flex to block */
+    margin-top: 1rem;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .imgcontain {
+    height: auto; /* Remove fixed height */
+  }
+
+  .imgcontain img {
+    margin-left: 0;
+   display: none;  }
+}
+
+
+
+/* Add at the end of TrackingRoute.css */
+@media (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 1.5rem !important;
+      color: blue !important;
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .hero-subtitle {
+      font-size: 0.9rem !important;
+      color: white !important;
+      text-align: center;
+  }
+
+  .search-input {
+      font-size: 0.9rem !important;
+      padding: 0.75rem !important;
+      width: 100%;
+  }
+
+  #btn1 {
+      font-size: 0.9rem !important;
+      padding: 0.75rem !important;
+      width: 100%;
+  }
+
+  .hero-container {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 3rem;
+  }
+
+  .hero-content {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+/* Specific iPhone models */
+@media (min-width: 375px) and (max-width: 430px) {
+  .hero-content h1 {
+      font-size: 1.5rem !important;
+      color: white !important;
+      width: 19rem !important;
+
+  }
+
+  .search-input, #btn1 {
+      font-size: 1rem !important;
+      padding: 0.85rem !important;
+  }
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 28px !important;
+    /* padding-left: 2 !important; */
+    margin-top: -32px !important;
+
+
+}
+.hero-subtitle {
+  font-size: 0.9rem !important;
+  color: white !important;
+  text-align: center;
+  width: 350% !important;
+
+}
+.search-input {
+  font-size: 0.9rem !important;
+  padding: 1.2rem !important;
+  width: 50vh !important;
+  cursor: pointer !important;
+}
+
+#btn1 {
+  font-size: 0.9rem !important;
+  padding: 0.75rem !important;
+  width: 100%;
+}
+
+}
+
+/* Mobile Responsiveness for Tracking Results */
+@media (max-width: 480px) {
+  .tracking-result-container {
+      padding: 1rem;
+      width: 100%;
+  }
+
+  .tracking-title {
+      font-size: 1.2rem !important;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      width: 50vh;
+      margin-left: 1rem;
+      margin-bottom: 2rem;
+
+  }
+
+  .tracking-subtitle {
+      font-size: 0.9rem !important;
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+
+
+  }
+
+  .tracking-search {
+      width: 90%;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-left: 1rem;
+      margin-bottom: 4rem;
+
+
+  }
+
+  .search-input {
+      width: 100%;
+      padding: 0.75rem !important;
+      font-size: 0.9rem !important;
+  }
+
+  #btn2 {
+      padding: 0.75rem !important;
+      font-size: 0.9rem !important;
+  }
+
+  .tracking-result-box {
+      padding: 1rem;
+      margin-top: 1rem;
+  }
+
+  .tracking-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+
+  .tracking-details .detail-row {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.5rem;
+  }
+
+  .detail-label {
+      margin-bottom: 0.25rem;
+      text-align: center;
+  }
+
+  .detail-value {
+      text-align: center;
+  }
+
+  .tracking-actions {
+      /* display: flex; */
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .label-button {
+      width: 100%;
+      text-align: center;
+      margin-top: 0.5rem;
+  }
+}
+
+/* Smaller iPhone Models */
+@media (max-width: 375px) {
+  .tracking-title {
+      font-size: 1.2rem !important;
+  }
+
+  .tracking-subtitle {
+      font-size: 0.8rem !important;
+  }
+}
+
+/* Add these styles to your TrackingRoute.css file */
+
+/* Full width container for tracking results */
+.tracking-result-box {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure tracking success has sufficient space for status tracker */
+.tracking-success {
+  width: 100%;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+/* Remove specific width constraints */
+.tracking-success .status-tracker {
+  width: 95%; /* Slightly less than 100% to avoid edge clipping */
+  margin: 20px auto;
+  padding: 15px 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .tracking-result-container {
+    padding: 10px;
+  }
+  
+  .tracking-success {
+    padding: 10px 0;
+  }
+  
+  .tracking-success .status-tracker {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  
+  /* Ensure content in tracking details doesn't overflow */
+  .tracking-details .detail-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tracking-details .detail-label {
+    margin-right: 5px;
+  }
+}
+
+/* For extremely small screens */
+@media screen and (max-width: 375px) {
+  .tracking-result-container {
+    padding: 5px;
+  }
+  
+  .tracking-success {
+    padding: 5px 0;
+  }
+  
+  .tracking-success .status-tracker {
+    padding: 10px 3px;
+  }
+}
+/* Add these to your TrackingRoute.css file */
+
+/* Ensure tracking result box is full width */
+.tracking-result-box {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Give the tracking success container proper spacing */
+.tracking-success {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Adjust padding and width for mobile */
+@media screen and (max-width: 768px) {
+  .tracking-success {
+    padding: 10px 0;
+  }
+  
+  /* Make the StatusTracker full width on mobile */
+  .tracking-success .status-tracker {
+    width: 96%; /* Slightly less than 100% to add a small margin */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+  }
+  
+  /* Remove horizontal spacing to maximize width */
+  .tracking-result-container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #span1{
+    margin-left: 3px;
+  }
+  .icon{
+    display: none;
+  }
+  
+}

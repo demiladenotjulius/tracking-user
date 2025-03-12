@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CargoLANE - Shipping & Tracking</title>
+<!-- Animate.css for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- Custom animation styles -->
+<style>
+/* Delay classes for animations */
+.animate__delay-200ms {
+animation-delay: 200ms !important;
+ }
+.animate__delay-400ms {
+animation-delay: 400ms !important;
+ }
+.animate__delay-600ms {
+animation-delay: 600ms !important;
+ }
+.animate__delay-800ms {
+animation-delay: 800ms !important;
+ }
+/* Hover effects */
+.zoom-on-hover:hover {
+transform: scale(1.05);
+transition: transform 0.3s ease;
+z-index: 1;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ 
+/* Custom animation for hero image */
+@keyframes slideInFromRight {
+ 0% {
+transform: translateX(50px);
+opacity: 0;
+ }
+ 100% {
+transform: translateX(0);
+opacity: 1;
+ }
+ }
+.animate__slideInFromRight {
+animation-name: slideInFromRight;
+ }
+
+/* Enhanced slide-in animation with more dramatic movement */
+@keyframes enhancedSlideInLeft {
+ 0% {
+opacity: 0;
+transform: translateX(-120px); /* Start much further left for more visible sliding */
+ }
+ 100% {
+opacity: 1;
+transform: translateX(-4rem); /* End at desired position */
+ }
+}
+
+/* Hero content h1 animation */
+.hero-content h1.animate__fadeInLeft {
+animation-name: enhancedSlideInLeft !important;
+animation-duration: 1.2s; /* Slightly longer to see the motion better */
+width: 200%;
+text-align: left;
+margin-left: -4rem;
+
+}
+
+/* Apply similar animation to subtitle */
+.hero-content p.hero-subtitle.animate__fadeInLeft {
+animation-name: enhancedSlideInLeft !important;
+animation-duration: 1.2s;
+width: 100%;
+text-align: left;
+margin-left: -4rem;
+
+}
+
+/* Search box animation - can use zoom but fix position */
+.hero-content .search-box.animate__zoomIn {
+width: 100%;
+max-width: 28rem;
+margin-left: -8rem;
+}
+
+/* Help text animation */
+.hero-content .help-text.animate__fadeIn {
+text-align: left;
+margin-left: -8rem;
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+<!-- Animation script to handle scroll animations -->
+<script>
+// Wait for everything to load
+document.addEventListener('DOMContentLoaded', function() {
+// Helper function to check if element is in viewport
+function isInViewport(element) {
+const rect = element.getBoundingClientRect();
+return (
+rect.top >= 0 &&
+rect.left >= 0 &&
+rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+ );
+ }
+// Find all elements with the scroll-animate class
+const animateElements = document.querySelectorAll('.scroll-animate');
+// Function to check and animate elements
+function checkAnimations() {
+animateElements.forEach(element => {
+if (isInViewport(element) && !element.classList.contains('animate__animated')) {
+// Get animation type from data attribute or default to fadeIn
+const animationType = element.dataset.animation || 'fadeIn';
+element.classList.add('animate__animated', `animate__${animationType}`);
+ }
+ });
+ }
+// Add event listener for scroll
+window.addEventListener('scroll', checkAnimations);
+// Check on initial load
+checkAnimations();
+ });
+</script>
+</body>
+</html>
