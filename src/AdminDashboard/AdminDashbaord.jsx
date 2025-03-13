@@ -311,7 +311,7 @@ const AdminTrackingPage = () => {
                 <button onClick={() => {
                   setActiveSection('allTrackings');
                   fetchTrackings(); // Refresh trackings when this tab is clicked
-                }}>All Trackings {deletedCount > 0 && `(${deletedCount} hidden)`}</button>
+                }}>All Trackings</button>
               </li>
               <li>
                 <button onClick={handleLogout}>Logout</button>
@@ -565,13 +565,13 @@ const AdminTrackingPage = () => {
                     position: 'absolute'
                   }}
                 >
-                  Restore All Hidden ({deletedCount})
+                  Restore All ({deletedCount})
                 </button>
               )}
             </div>
             
             {trackings.length === 0 ? (
-              <p>No tracking records found. {deletedCount > 0 && `(${deletedCount} items are hidden)`}</p>
+              <p>No tracking records found.</p>
             ) : (
               <div className="tracking-list">
                 {trackings.map((tracking) => (
@@ -594,10 +594,9 @@ const AdminTrackingPage = () => {
                       <button 
                         onClick={() => handleDeleteTracking(tracking._id)}
                         className="action-button delete-button"
-                        id='delete'
                         disabled={deleteLoading && deletingId === tracking._id}
                       >
-                        {deleteLoading && deletingId === tracking._id ? 'Hiding...' : 'delete'}
+                        {deleteLoading && deletingId === tracking._id ? 'Removing...' : 'Remove'}
                       </button>
                     </div>
                   </div>
