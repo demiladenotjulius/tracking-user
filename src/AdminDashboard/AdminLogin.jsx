@@ -34,7 +34,7 @@ const AdminLogin = () => {
   return (
     <div className="admin-login-container">
       <div className="admin-login-hero">
-        <h1 className="hero-title">Admin Login</h1>
+        {/* <h1 className="hero-title">Admin Login</h1> */}
         <p className="hero-subtitle">Access your admin dashboard to manage orders and tracking.</p>
       </div>
       <div className="admin-login-form-container">
