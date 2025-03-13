@@ -1004,7 +1004,7 @@ Status-specific styles
   .hero-content h1 {
       font-size: 1.5rem !important;
       color: white !important;
-      width: 19rem !important;
+      width: 18rem !important;
 
   }
 
@@ -1015,7 +1015,7 @@ Status-specific styles
   .hero-container {
     flex-direction: column;
     text-align: center;
-    margin-right: 28px !important;
+    margin-right: -12px !important;
     /* padding-left: 2 !important; */
     margin-top: -32px !important;
 
@@ -1371,7 +1371,7 @@ font-size: 0.9rem !important;
 padding: 1.2rem !important;
 width: 50vh !important;
 cursor: pointer !important;
-margin-left: 200px !important;
+margin-left: 300px !important;
 margin-bottom: 1rem !important;
 
 
@@ -1389,4 +1389,44 @@ margin-bottom: 1rem !important;
   width: 200% !important;
 
 }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .hero-content h1 {
+    font-size: 1.4rem !important;
+    color: white !important;
+    width: 17rem !important;
+  }
+  .search-input, #btn1 {
+    font-size: 0.9rem !important;
+    padding: 0.8rem !important;
+  }
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    margin-right: -30px !important;
+    margin-top: -32px !important;
+  }
+  .hero-subtitle {
+    font-size: 0.85rem !important;
+    color: white !important;
+    text-align: center;
+    width: 300% !important;
+  }
+  .search-input {
+    font-size: 0.85rem !important;
+    padding: 1.1rem !important;
+    width: 45vh !important;
+    cursor: pointer !important;
+  }
+  #btn1 {
+    font-size: 0.85rem !important;
+    padding: 0.7rem !important;
+    width: 100%;
+  }
+  .help-text {
+    margin-left: -11rem !important;
+    width: 50vh !important;
+    /* text-align: center; */
+  }
 }
