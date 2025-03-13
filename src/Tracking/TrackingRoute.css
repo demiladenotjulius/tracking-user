@@ -108,6 +108,8 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
   text-align: left;
+  color: white !important; 
+
 }
 
 .search-box {
@@ -947,15 +949,25 @@ Status-specific styles
 
 
 
-/* Add at the end of TrackingRoute.css */
 @media (max-width: 480px) {
-  .hero-content h1 {
+  /* .hero-content h1 {
       font-size: 1.5rem !important;
       color: blue !important;
       text-align: center;
       width: 100%;
       margin-left: 0;
-  }
+  } */
+
+
+
+
+
+
+
+
+
+
+
 
   .hero-subtitle {
       font-size: 0.9rem !important;
@@ -1239,4 +1251,73 @@ Status-specific styles
     display: none;
   }
   
+}
+
+
+@media (min-width: 431px) and (max-width: 500px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 1rem;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem !important;
+    color: white !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem !important;
+    color: white !important;
+    text-align: center;
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+
+  .search-box {
+    width: 100% !important;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-input {
+    font-size: 0.9rem !important;
+    padding: 1.2rem !important;
+    width: 100% !important;
+  }
+
+  #btn1 {
+    padding: 1.2rem !important;
+    margin-left: 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .imgcontain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .imgcontain img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }
