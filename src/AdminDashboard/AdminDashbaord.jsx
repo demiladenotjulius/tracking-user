@@ -166,16 +166,18 @@ const AdminTrackingPage = () => {
         productName: formData.productName,
         productDescription: formData.productDescription,
         customerInfo,
-        senderInfo,
         expectedDeliveryDate: formData.expectedDeliveryDate
           ? new Date(formData.expectedDeliveryDate)
           : undefined,
+        // Add these directly to the payload
+        senderName: formData.senderName,
+        senderEmail: formData.senderEmail,
+        shippingFee: formData.shippingFee,
+        taxFee: formData.taxFee,
+        packageWeight: formData.packageWeight,
+        invoiceNo: formData.invoiceNo,
         additionalDetails: {
-          statusUpdateInterval: formData.statusUpdateInterval,
-          shippingFee: formData.shippingFee,
-          taxFee: formData.taxFee,
-          packageWeight: formData.packageWeight,
-          invoiceNo: formData.invoiceNo
+          statusUpdateInterval: formData.statusUpdateInterval
         }
       };
       const response = await trackingService.createTracking(payload);
