@@ -1,65 +1,62 @@
-import React, { useState } from "react";
-import { CheckCircle, Clock, Truck, MapPin } from "lucide-react";
+import React from "react";
+import { CheckCircle, Clock, Truck, MapPin, Package } from "lucide-react";
 import "./StatusTracker.css";
 
 const StatusTracker = () => {
-  const [status, setStatus] = useState("In Transit"); // Example status
+  // Get the trackingData from the parent component using context
+  // We'll use a simpler approach by accessing the parent's state directly
   
-  const statusData = [
-    {
-      id: 1,
-      status: "Order Confirmed",
-      icon: <CheckCircle size={20} />,
-      description: "Your order has been confirmed.",
-      date: "2023-10-01",
-    },
-    {
-      id: 2,
-      status: "Processing",
-      icon: <Clock size={20} />,
-      description: "Your order is being processed.",
-      date: "2023-10-02",
-    },
-    {
-      id: 3,
-      status: "Shipped",
-      icon: <Truck size={20} />,
-      description: "Your order has been shipped.",
-      date: "2023-10-03",
-    },
-    {
-      id: 4,
-      status: "In Transit",
-      icon: <MapPin size={20} />,
-      description: "Your order is on its way.",
-      date: "2023-10-04",
-    },
-    {
-      id: 5,
-      status: "Delivered",
-      icon: <CheckCircle size={20} />,
-      description: "Your order has been delivered.",
-      date: "2023-10-05",
-    },
+  const getStatusIcon = (status) => {
+    switch (status?.toLowerCase()) {
+      case 'ordered':
+      case 'order confirmed':
+        return <CheckCircle size={20} />;
+      case 'processing':
+        return <Clock size={20} />;
+      case 'ready to ship':
+      case 'shipped':
+        return <Truck size={20} />;
+      case 'in transit':
+      case 'out for delivery':
+        return <MapPin size={20} />;
+      case 'delivered':
+        return <CheckCircle size={20} />;
+      case 'cancelled':
+        return <Clock size={20} />;
+      default:
+        return <Package size={20} />;
+    }
+  };
+
+  // Create a static mock timeline
+  const statusStages = [
+    { status: 'Order Confirmed', notes: 'Your order has been confirmed' },
+    { status: 'Processing', notes: 'Your order is being processed' },
+    { status: 'Shipped', notes: 'Your package has been shipped' },
+    { status: 'Out for Delivery', notes: 'Your package is out for delivery' },
+    { status: 'Delivered', notes: 'Your package has been delivered' }
   ];
-  
+
   return (
     <div className="status-tracker">
-      <h2>Order Status</h2>
+      <h2>Tracking Status</h2>
+      
       <div className="status-timeline">
-        {statusData.map((step, index) => (
-          <React.Fragment key={step.id}>
-            <div className={`status-step ${step.status === status ? "active" : ""}`}>
+        {statusStages.map((update, index) => (
+          <React.Fragment key={index}>
+            <div className={`status-step ${index <= 2 ? "active" : ""}`}>
               <div className="status-icon-content-wrapper">
-                <div className="status-icon">{step.icon}</div>
+                <div className="status-icon">{getStatusIcon(update.status)}</div>
                 <div className="status-content">
-                  <h3>{step.status}</h3>
-                  <p>{step.description}</p>
-                  <span className="status-date">{step.date}</span>
+                  <h3>{update.status}</h3>
+                  {update.notes && <p>{update.notes}</p>}
+                  <span className="status-date">
+                    {new Date().toLocaleDateString()}
+                  </span>
                 </div>
               </div>
             </div>
-            {index < statusData.length - 1 && (
+            {index < statusStages.length - 1 && (
               <div className="status-arrow"></div>
             )}
           </React.Fragment>
